@@ -73,7 +73,7 @@
 {CISBAT 2019 International Conference - Future Buildings \& Districts - Energy Efficiency from Nano to Urban Scale, Lausanne, Switzerland}
 \end{center}
 
-\title{Publication Title} 
+\title{Methodology for the in-situ collection of indoor occupant comfort data} 
 %Energy Performance of PV modules as Adaptive Building Shading Systems
 %Numerical Energy Analysis of PV Modules as Adaptive Building Shading Systems
 
@@ -83,15 +83,13 @@
 \address[buds]{Building and Urban Data Science Group,  Department of Building, Singapore} 
 % For whatever reason the affiliation needs to be defined after the authors. Otherwise the numbering gets messed up.
 
-\author[buds]{M. Author2}
-  \ead{zarbj@student.ethz.ch}
+\author[buds]{M. Quintana Rosales}
+  \ead{matias@u.nus.edu}
 
 
-\author[buds]{M. Author3}
-    \ead{maurol@student.ethz.ch}
-
-\author[buds]{J. author4}
-    \ead{hofer@arch.ethz.ch}
+\author[unsw]{N. Narzarian}
+    \ead{n.nazarian@unsw.edu.au}
+\address[unsw]{University of New South Wales, Australia}
 
 % \author[aut]{Z. Nagy}
 %     \ead{nagy@utexas.edu}
@@ -107,40 +105,60 @@
 
 \begin{abstract}
 
-lll
+A 2012 survey of 52'980 occupants in 251 office buildings found that 50\% of all occupants were dissatisfied with their indoor environment \cite{frontczak2012quantitative}. This dissatisfaction can result in a reduction of work performance \cite{wargocki2007effects} and be a precursor for future health issues \cite{jaakkola1989sick}. \\
+
+Significant progress has been made to improve occupant comfort. On one hand, there is the technological advancement of heating, ventilation and air conditioning systems (HVAC). On the other hand, there are advancements in human-building interaction which enables the local environment to adapt to the needs of the occupant \cite{wang2017state}. These methods however have one fundamental limitation. They assume that all occupants within a building zone share the same comfort preference. In reality, variations in metabolic rates \cite{byrne2005metabolic}, light preferences \cite{galasiu2006occupant}, and noise tolerance [citation required] presents a challenge when attempting to condition a work-space to meet the requirements of all occupants \cite{kingma2015energy}.\\
+
+Rather than tailoring the work-space to the preferences of the occupants, an alternative approach is to match the individual to a work-space. This requires an understanding of the individuals comfort preferences and a recommendation engine that can suggest a comfortable workspace in real time based on building environmental sensor data. 
+
+This paper focuses on the first of these challenges, namely comfort data collection. The state of the art in this field are comfort surveys. Although this works it has three main limitations
+
+\begin{itemize}
+  \item The methodology cannot be scaled to large sample sets due to the administrative overhead in preparing these studies.
+  \item The studies are often conducted outside of the test subjects natural working environment.
+  \item Users suffer from survey fatigue \cite{porter2004multiple} due to the number of data points required to conduct a thorough assessment. 
+\end{itemize}
+
+This paper presents a novel form of occupant comfort data collection, using a wearable health tracker, in this case the Fitbit smartwatch, with 25 million active users [cite Fitbit investor]. The application is a simple clock-face where the user can state their comfort preference as a binary input "comfy" or "not comfy". The comfort preferences are mapped to a time series database and linked with sensors that were present in the location of the user at that time.\\
+
+This proof of concept has been launched with a small sample set of 15 users. Each user has been equipped with a Fitbit, and a wearable environmental sensor from the National Singapore Science Experiment \cite{monnot2016inferring} [probably wrong source]. All data is collected in-situ in the user's natural work environment. \\
+
+Next steps in this study involve the development of a work-space recommendation engine. This engine will process the data and give each user a unique comfort profile that can be used to recommend work-spaces in real time. This project, known as SpaceMatch will be launched in 2019 at the National University of Singapore. \\
+
+The clock-face application is available for free download from the Fitbit store for future researchers to conduct their own crowd-sourced comfort studies.
 
 \end{abstract}
 
 \begin{keyword}
-Dynamic Photovoltaics \sep Multi Functional Envelope \sep BIPV \sep Adaptive Shading
+Comfort Feedback \sep Data Collection \sep Fitbit \sep Comfort Recommendation \sep Mood Logging
 \end{keyword}
 
 \end{frontmatter}
 
-\section{Introduction}
-\label{ch:introduction}
-\input{1_introduction}
+% \section{Introduction}
+% \label{ch:introduction}
+% \input{1_introduction}
 
-\section{Methodology}
-\label{ch:method}
-\input{2_methodology}
+% \section{Methodology}
+% \label{ch:method}
+% \input{2_methodology}
 
-\section{Results}
-\label{ch:results}
-\input{3_results}
+% \section{Results}
+% \label{ch:results}
+% \input{3_results}
 
 
-% \section{Discussion}
-% \label{ch:discussion}
-% \input{5_discussion}
+% % \section{Discussion}
+% % \label{ch:discussion}
+% % \input{5_discussion}
 
-\section{Discussion and Conclusion}
-\label{ch:conclusion}
-\input{6_conclusion}
+% \section{Discussion and Conclusion}
+% \label{ch:conclusion}
+% \input{6_conclusion}
 
-\section{Acknowledgments}
-\label{ch:acknowledgments}
-\input{7_acknowledgments}
+% \section{Acknowledgments}
+% \label{ch:acknowledgments}
+% \input{7_acknowledgments}
 
 % \begin{appendices}
 %  \label{ch:appendix}
