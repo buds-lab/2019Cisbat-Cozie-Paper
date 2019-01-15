@@ -19,7 +19,7 @@ Keywords: Mood Logging, Comfort Feedback, Data Collection, Fitbit, Comfort Recom
 ### Problem Statement
 - Firstly the methodology cannot be scaled to large sample sets due to the administrative overhead in setting up user based studies
 - Secondly the user is often out of their natural working or living environment
-- Thirdly there is also the issue with survey fatigue (find citation), and people concerned with the inputs they provide {/cite ThermoKiosk: Investigating Roles for Digital Surveys of Thermal Experience in Workplace Comfort Management}
+- Thirdly there is also the issue with survey fatigue (find citation), and people concerned with the inputs they provide {/cite Clear2018}
 
 ### Goal
 This paper propses a novel form of user comfort data collection using a wearable health tracker, in this case the fitbit, with 25million active users [source: https://investor.fitbit.com/press/press-releases/press-release-details/2018/Fitbit-Reports-571M-Q417-and-1616B-FY17-Revenue/default.aspx ]
