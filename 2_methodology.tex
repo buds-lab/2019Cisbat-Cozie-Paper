@@ -1,43 +1,16 @@
 % !TEX root = 99_main.tex
 
+An experient was conducted at the SDE4, a new built net-zero energy building, at the National Unviersity of Singapore. 20 participants who work in the co-working spaces of the level 6 design studio were recruited for the experiment and equiped with a fitbit watch. The watch settings were set to also request thermal preference (prefer warmer, prefer cooler, comfy), and the set to force request feedback every two hours between the hours of 9:00 to 17:00. \\
 
-The methodology runs the ASF Simulation. It will be briefly reviewed here for Simplicity 
-
-
-\subsection{Solar Radiation Evaluation}
-\label{ch:rad}
+The watch was further complimented with IoT connected on-body and environmental sensors shown in Figure \ref{fig:strappack}. The onbody sensor consists of a temperature and light sensor from mbient-labs, with bluetooth connectivity to raspberryPi gateways [ref]. The working space on level six is retrofitted with three WiFi connected environmental sensors from SenSING that measure temperature, humidity, light, noise, presence, CO$_2$, and VOC. All data is automatically synced to the Influx time series cloud database.\\
 
 
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.2\textwidth, trim= 0cm 0cm 0cm 0cm,clip]{strap-pack.jpg}
+\caption{Strap-Pack}
+\label{fig:strappack}
+\end{center}
+\end{figure}
 
-\subsection{Building Simulation Model}
-\label{ch:sim}
-
-\subsection{Sensitivities}
-
-Within this framework, three sensitivities will be analysed:
-
-\begin{description}
-
-\item[Building Envelope:] The building envelope is characterised in the RC model as $H_w$. ...
-\item[Infiltration:] The infiltration rate is modified in the $H_{ve}$ component of the RC model...
-\item[Thermal Capacitance:] The thermal capacitance of the mass is denoted as $C_m$ in the RC model. It...
-
-\end{description}
-
-
-\subsection{Analysis of Archetypes}
-
-- Building Archetypes are taken from CEA tool and evaluated within the ASF Framework
-
-- Table of Input Parameters for the different buildings
-% \begin{figure}
-% \begin{center}
-% \includegraphics[width=\columnwidth, trim= 0cm 0cm 0cm 0cm,clip]{radiationAnalysis.png}
-% \caption{A simulation result showing module and window insolation from 11:00-12:00 on the 16 June for a Zurich weather file and a specific module orientation.}
-% \label{fig:radiation}
-% \end{center}
-% \end{figure}
-
-
-
-
+A simple application written in python merges the cozie time-series database, with the sensor data, thus creating a rich set of labeled data for the building. This data will be elborated on in the next section. 
