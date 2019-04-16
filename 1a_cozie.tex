@@ -16,13 +16,14 @@ If the manager is interested as to why the user is feeling discomfort, then ther
   \item Noise: Prefer Louder - Prefer Quieter 
   \item Mood: Happy - Neutral - Sad
   \item Location: Indoor - Outdoor
+  \item Location: In Office - Out of Office
 \end{itemize}
 
-These responses will be bundled with the afore mentioned data, and stored in the Influx time series database. The manager is invited to contact the authors if they have further tailored questions that they would like to add.\\
+These responses will be grouped with the afore mentioned data, and stored in the Influx time series database. The manager is invited to contact the authors if they have further tailored questions that they would like to add.\\
 
 A unique user-id for each user, and a unique experiment-id can be configured by the manager using the cellphone that the fitbit is paired with. \\
 
-The watch-face also has the ability to prompt the user with a 3 second vibration, and force them to provide comfort feedback. This may be triggered using time intervals, certain hours of the day, random hours of the day, or at each 1000 steps walked. 
+The watch-face also has the ability to prompt the user with a 3 second vibration, and force them to provide comfort feedback. This may be triggered at certain hours of the day, random hours of the day, at set time intervals, or at each 1000 steps walked. 
 
 
 \begin{figure}
@@ -35,8 +36,6 @@ The watch-face also has the ability to prompt the user with a 3 second vibration
 
 \subsection{Building Data Labeling}
 
-While the cozie watch-face can provide subjective in-situ human comfort feedback, the true value of the application arises when combined with building sensor data. 
-
-(Expand more here about the sensors used etc)
+The human comfort feedback can be combined with building sensor data to create a labeled data set of the environment. (perhaps talk more or delete this section)
 
 An example of this in practice will be introduced in the next section.
