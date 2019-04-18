@@ -2,7 +2,9 @@
 
 An experient was conducted at the SDE4, a new built net-zero energy building, at the National Unviersity of Singapore. 20 participants who work in the co-working spaces of the level 6 design studio were recruited for the experiment and equiped with a fitbit watch. The watch settings were set to also request thermal preference (prefer warmer, prefer cooler, comfy), and the set to force request feedback at the hours of 9:00, 11:00, 13:00, 15:00, and 17:00 \\
 
-The watch was further complimented with IoT connected on-body and environmental sensors shown in Figure \ref{fig:strappack}. The onbody sensor consists of a temperature and light sensor from mbient-labs, with bluetooth connectivity to raspberryPi gateways [ref]. The working space on level six is retrofitted with three WiFi connected environmental sensors from SenSING that measure temperature, humidity, light, noise, presence, CO$_2$, and VOC. All data is automatically synced to the Influx time series cloud database.\\
+The watch was further complimented with IoT connected on-body and environmental sensors shown in Figure \ref{fig:strappack}. The onbody sensor consists of a temperature and light sensor from mbient-labs that had been modified to fit the watch strap with a custom 3d printed case. An off body sensor measuring temperature and humidity was attached to the participants bag. The sensors communicate via bluetooth to raspberryPi gateways that had been positioned throughout the working space. \\
+
+Data from the cozie watch face, and the environmental sensors were aggrigated in an Influx cloud time-series database, which served as a platform for data aquisition and fault detection. Simple algorithms written in python can dynamically pull the data from the Inlfux servers and process them for a variety of needs that will be expaned in the next section. Source codes can be found here [ref aurek-data-crunch repo].
 
 
 \begin{figure}
@@ -12,6 +14,4 @@ The watch was further complimented with IoT connected on-body and environmental 
 \label{fig:strappack}
 \end{center}
 \end{figure}
-
-%A simple application written in python merges the cozie time-series database, with the sensor data, thus creating a rich set of labeled data for the building. This data will be elborated on in the next section. 
 
