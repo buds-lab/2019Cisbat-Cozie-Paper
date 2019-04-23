@@ -1,4 +1,4 @@
-\documentclass[preprint,11pt,3p]{elsarticle} %review, or preprint
+\documentclass[a4paper]{jpconf} %review, or preprint
 
 \usepackage{amssymb}
 \usepackage{graphics}
@@ -54,13 +54,13 @@
 
 \graphicspath{{./Images/}}
 
-\journal{CISBAT}
+
 
 %\journal{Solar Energy, Energy and Buildings, Building and Environment, Energy Science and Engineering}
 
 \begin{document}
 
-\begin{frontmatter}
+%\begin{frontmatter}
 
 % \begin{figure}
 % \begin{center}
@@ -69,74 +69,65 @@
 % \end{center}
 % \end{figure}
 
-\begin{center}
-{CISBAT 2019 International Conference - Future Buildings \& Districts - Energy Efficiency from Nano to Urban Scale, Lausanne, Switzerland}
-\end{center}
+% \begin{center}
+% {CISBAT 2019 International Conference - Future Buildings \& Districts - Energy Efficiency from Nano to Urban Scale, Lausanne, Switzerland}
+% \end{center}
 
 \title{Is your clock-face cozie? A methodology for the in-situ collection of occupant comfort data} 
 %Energy Performance of PV modules as Adaptive Building Shading Systems
 %Numerical Energy Analysis of PV Modules as Adaptive Building Shading Systems
 
+\author{P Jayathissa $^1$, M Quintana$^1$,
+T Sood$^1$, N. Narzarian$^2$, C. Miller $^1$ \footnote[4]{Present address:
+Department of Building, National University of Singapore, 4 Architecture Drive, Singapore}}
+\address{$^1$ Building and Urban Data Science Group,  Department of Building, Singapore}
+\address{$^2$ University of New South Wales, Australia}
 
-\author[buds]{P. Jayathissa\corref{cor2}}
-    \ead{p.jayathissaa@nus.edu.sg}
-\address[buds]{Building and Urban Data Science Group,  Department of Building, Singapore} 
-% For whatever reason the affiliation needs to be defined after the authors. Otherwise the numbering gets messed up.
-
-\author[buds]{M. Quintana}
-  \ead{matias@u.nus.edu}
-
-\author[buds]{T. Sood}
-  \ead{matias@u.nus.edu}
+\ead{p.jayathissa@nus.edu.sg}
 
 
-\author[unsw]{N. Narzarian}
-    \ead{n.nazarian@unsw.edu.au}
-\address[unsw]{University of New South Wales, Australia}
 
-% \author[aut]{Z. Nagy}
-%     \ead{nagy@utexas.edu}
-% \address[aut]{Intelligent Environments Laboratory, Department of Civil, Architectural and Environmental Engineering,\\ The University of Texas at Austin, USA}
+% \author[buds]{P. Jayathissa\corref{cor2}}
+%     \ead{p.jayathissaa@nus.edu.sg}
+% \address[buds]{Building and Urban Data Science Group,  Department of Building, Singapore} 
+% % For whatever reason the affiliation needs to be defined after the authors. Otherwise the numbering gets messed up.
+
+% \author[buds]{M. Quintana}
+%   \ead{matias@u.nus.edu}
+
+% \author[buds]{T. Sood}
+%   \ead{matias@u.nus.edu}
 
 
-\author[buds]{C. Miller \corref{cor1} }
-    \ead{clayton@nus.edu.sg}
+% \author[unsw]{N. Narzarian}
+%     \ead{n.nazarian@unsw.edu.au}
+% \address[unsw]{University of New South Wales, Australia}
+
+% % \author[aut]{Z. Nagy}
+% %     \ead{nagy@utexas.edu}
+% % \address[aut]{Intelligent Environments Laboratory, Department of Civil, Architectural and Environmental Engineering,\\ The University of Texas at Austin, USA}
 
 
-\cortext[cor2]{Corresponding author}
+% \author[buds]{C. Miller \corref{cor1} }
+%     \ead{clayton@nus.edu.sg}
+
+
+%\cortext[cor2]{Corresponding author}
 
 
 \begin{abstract}
 
-% A 2012 survey of 52'980 occupants in 251 office buildings found that 50\% of all occupants were dissatisfied with their indoor environment \cite{frontczak2012quantitative}. This dissatisfaction can result in a reduction of work performance \cite{wargocki2007effects} and be a precursor for future health issues \cite{jaakkola1989sick}. \\
+This paper presents a methodology for the collection of occupant human feedback data using a fitbit smart watch. The clock-face application can be downloaded, free of charge on the fitbit store, and tailored to fit a range of occupant comfort related experiments. 15 users were given a fitbit for one month, where they were prompted to give feedback on their thermal preferences. In one month, with minimal administrative overhead [insert number here] of responses were collected. This paper demonstrates how these large datasets of human feedback can be analysed to reveal a range of results from building anomalies, occupant behaviour, occupant personality clustering, and general feedback related to the building. The paper also discusses limitations in the approach and next design stages.
 
-% Significant progress has been made to improve occupant comfort. On one hand, there is the technological advancement of heating, ventilation and air conditioning systems (HVAC). On the other hand, there are advancements in human-building interaction which enables the local environment to adapt to the needs of the occupant \cite{wang2017state}. These methods however have one fundamental limitation. They assume that all occupants within a building zone share the same comfort preference. In reality, variations in metabolic rates \cite{byrne2005metabolic}, light preferences \cite{galasiu2006occupant}, and noise tolerance [citation required] presents a challenge when attempting to condition a work-space to meet the requirements of all occupants \cite{kingma2015energy}.\\
 
-% Rather than tailoring the work-space to the preferences of the occupants, an alternative approach is to match the individual to a work-space. This requires an understanding of the individuals comfort preferences and a recommendation engine that can suggest a comfortable workspace in real time based on building environmental sensor data. 
-
-% This paper focuses on the first of these challenges, namely comfort data collection. The state of the art in this field are comfort surveys. Although this works it has three main limitations
-
-% \begin{itemize}
-%   \item The methodology cannot be scaled to large sample sets due to the administrative overhead in preparing these studies.
-%   \item The studies are often conducted outside of the test subjects natural working environment.
-%   \item Users suffer from survey fatigue \cite{porter2004multiple} due to the number of data points required to conduct a thorough assessment, and even when willing to participate, they are concerned about how accurate they are responding to them \cite{Clear2018}
-% \end{itemize}
-
-% This paper presents a novel form of occupant comfort data collection, using a wearable health tracker, in this case the Fitbit smartwatch, with 25 million active users \cite{fibit2018}. The application is a simple clock-face where the user can state their comfort preference as a binary input "comfy" or "not comfy". The comfort preferences are mapped to a time series database and linked with sensors that were present in the location of the user at that time.\\
-
-% This proof of concept has been launched with a small sample set of 15 users. Each user has been equipped with a Fitbit, and a wearable environmental sensor from the National Singapore Science Experiment \cite{wilhelm2016wearable}. All data is collected in-situ in the user's natural work environment. \\
-
-% Next steps in this study involve the development of a work-space recommendation engine. This engine will process the data and give each user a unique comfort profile that can be used to recommend work-spaces in real time. This project, known as SpaceMatch will be launched in 2019 at the National University of Singapore. \\
-
-% The clock-face application is available for free download from the Fitbit store for future researchers to conduct their own crowd-sourced comfort studies.
 
 \end{abstract}
 
-\begin{keyword}
-Comfort Feedback \sep Data Collection \sep Fitbit \sep Comfort Recommendation \sep Mood Logging
-\end{keyword}
+% \begin{keyword}
+% Comfort Feedback \sep Data Collection \sep Fitbit \sep Comfort Recommendation \sep Mood Logging
+% \end{keyword}
 
-\end{frontmatter}
+% \end{frontmatter}
 
 \section{Introduction}
 \label{ch:introduction}
@@ -146,7 +137,7 @@ Comfort Feedback \sep Data Collection \sep Fitbit \sep Comfort Recommendation \s
 \label{ch:cozie}
 \input{1a_cozie}
 
-\section{Example Experimental Methodology}
+\section{Experimental methodology}
 \label{ch:method}
 \input{2_methodology}
 
@@ -161,7 +152,7 @@ Comfort Feedback \sep Data Collection \sep Fitbit \sep Comfort Recommendation \s
 
 \section{Conclusion}
 \label{ch:conclusion}
-\input{6_conclusion}
+\input{6_conclusion}\\
 
 % \section{Acknowledgments}
 % \label{ch:acknowledgments}
@@ -178,7 +169,7 @@ Comfort Feedback \sep Data Collection \sep Fitbit \sep Comfort Recommendation \s
 %% \label{}
 
 %% bibitems, please use
-\clearpage %to prevent figures from coming before the bib
+\section*{References}
   \bibliographystyle{elsarticle-num} 
   \bibliography{references}
 
