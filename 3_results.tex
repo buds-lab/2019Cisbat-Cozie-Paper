@@ -42,7 +42,7 @@ It is interesting to note that there is on average [INSERT NUMBER HERE] times mo
         \includegraphics[height= 3cm]{map_sde.png}
         \caption{(c)}
     \end{subfigure}
-    \caption{Map of responses. From left to right, the city of Singapore, National University of Singapore, and the School of Design and Environment. The experiment was conducted at co-working spaces at the school of design and environment, however responses are seen throughout Singapore. Note that these results only show 172 of the [INSERT NUMBER] total responses as GPS localisation often failed indoors.}
+    \caption{Map of responses. From left to right, the city of Singapore, National University of Singapore, and the School of Design and Environment. The experiment was conducted at co-working spaces at the school of design and environment, however responses are seen throughout Singapore. Note that these results only show 634 of the [INSERT NUMBER] total responses as GPS localisation often failed indoors.}
     \label{fig:map}
 \end{figure}
 
@@ -59,23 +59,31 @@ It is importat to note that the data is not representative of a single space. As
 
 %It is important to note here that the data is not entirely representative of a single building space, as the user may have given feedback while having lunch outside. There are even feedback results made outside of working hours as seen in \ref{fig:hourPlot} \ref{fig:responseRate}. Conclusions such as "Building Zone A was comfortable 80\% of the time" can therefore not be made. This will be further discussed in Section \ref{ch:discussion}.
 
-
 \begin{figure}
-    \begin{subfigure}[t]{0.49\textwidth}  
-    \centering
-        \includegraphics[width=\textwidth, trim= 0cm 0cm 0cm 0cm,clip]{cozie_users.pdf}
-		\caption{(a)}
-		\label{fig:userPlot}
-    \end{subfigure}
-    \begin{subfigure}[t]{0.49\textwidth}
-    \centering
-        \includegraphics[width=\textwidth, trim= 0cm 0cm 0cm 0cm,clip]{cozie_users_lowheart.pdf}
-		\caption{(b)}
-		\label{fig:lowHeartUsers}
-    \end{subfigure}
-    \caption{Clustering of user feedback using hierarchal k-means. (a) The full results show four distinct clusters, (b) filter by heart rate that is less than 100 beats per minute}
-    \label{fig:clustering}
+\begin{center}
+\includegraphics[width=\textwidth, trim= 0cm 0cm 0cm 0cm,clip]{cluster_results.pdf}
+\caption{Clustering of user feedback using hierarchal k-means}
+\label{fig:clustering}
+\end{center}
 \end{figure}
+
+
+% \begin{figure}
+%     \begin{subfigure}[t]{0.49\textwidth}  
+%     \centering
+%         \includegraphics[width=\textwidth, trim= 0cm 0cm 0cm 0cm,clip]{cozie_users.pdf}
+% 		\caption{(a)}
+% 		\label{fig:userPlot}
+%     \end{subfigure}
+%     \begin{subfigure}[t]{0.49\textwidth}
+%     \centering
+%         \includegraphics[width=\textwidth, trim= 0cm 0cm 0cm 0cm,clip]{cozie_users_lowheart.pdf}
+% 		\caption{(b)}
+% 		\label{fig:lowHeartUsers}
+%     \end{subfigure}
+%     \caption{Clustering of user feedback using hierarchal k-means. (a) The full results show four distinct clusters, (b) filter by heart rate that is less than 100 beats per minute}
+%     \label{fig:clustering}
+% \end{figure}
 
 
 
