@@ -8,43 +8,50 @@ Figure \ref{fig:hourPlot} details a simple heat-map where the user comfort feedb
 
 It is interesting to note that there is on average [INSERT NUMBER HERE] times more responses in the hours of 9:00, 11:00, 13:00, 15:00, and 17:00 when the occupant is buzzed and forced to give feedback. Nevertheless there are still significant amounts of responses made outside these times through the motivation of the participants themselves. Figure \ref{fig:responseRate} details the daily responses from the participants, and no observable decrease in responses can be made. Dips in responses naturally occur during the weekend. 
 
-
 \begin{figure}
-\centering
-	\begin{subfigure}[t]{0.5\textwidth}
-	\includegraphics[width=\textwidth, trim= 0cm 0cm 0cm 0cm,clip]{hourPlot.pdf}
-	\caption{(a)}
-	\label{fig:hourPlot}
-	\end{subfigure}
-	\begin{subfigure}[t]{0.49\textwidth}
-	\includegraphics[width=\textwidth, trim= 0cm 0cm 0cm 0cm,clip]{response_rate.pdf}
-	\caption{(b)}
-	\label{fig:responseRate}
-	\end{subfigure}
-	\caption{(a) Aggregation of user feedback mapped to the hour of the day that feedback was given. Annotations within the heat-map detail the absolute response value, while the colour gradient relates to the normalised values (b) Daily responses during the course of the evaluation period. The dips in the graph are weekends}
+\begin{center}
+\includegraphics[width=\textwidth, trim= 0cm 0cm 0cm 0cm,clip]{cozie_datasummary.pdf}
+\caption{Overview of raw data extracted from the cozie watch face and additional sensors. (a) spatial distribution of responses throughout Singapore, (b) temporal distribution of responses, (c) number of responses per day over the course of the experimnet, (d-f) normalised distribution of responses based on the fitbit heart rate sensor, wrist mounted temperature sensor, and of-body humidity sensor }
+\label{fig:summary}
+\end{center}
 \end{figure}
 
+% \begin{figure}
+% \centering
+% 	\begin{subfigure}[t]{0.5\textwidth}
+% 	\includegraphics[width=\textwidth, trim= 0cm 0cm 0cm 0cm,clip]{hourPlot.pdf}
+% 	\caption{(a)}
+% 	\label{fig:hourPlot}
+% 	\end{subfigure}
+% 	\begin{subfigure}[t]{0.49\textwidth}
+% 	\includegraphics[width=\textwidth, trim= 0cm 0cm 0cm 0cm,clip]{response_rate.pdf}
+% 	\caption{(b)}
+% 	\label{fig:responseRate}
+% 	\end{subfigure}
+% 	\caption{(a) Aggregation of user feedback mapped to the hour of the day that feedback was given. Annotations within the heat-map detail the absolute response value, while the colour gradient relates to the normalised values (b) Daily responses during the course of the evaluation period. The dips in the graph are weekends}
+% \end{figure}
 
-\begin{figure}
-    \centering
-    \begin{subfigure}[t]{0.3\textwidth}
-        \centering
-        \includegraphics[height= 3cm]{map_singapore.png}
-        \caption{(a)}
-    \end{subfigure}
-    \begin{subfigure}[t]{0.3\textwidth}
-        \centering
-        \includegraphics[height= 3cm]{map_nus.png}
-        \caption{(b)}
-    \end{subfigure}
-    \begin{subfigure}[t]{0.3\textwidth}
-        \centering
-        \includegraphics[height= 3cm]{map_sde.png}
-        \caption{(c)}
-    \end{subfigure}
-    \caption{Map of responses. From left to right, the city of Singapore, National University of Singapore, and the School of Design and Environment. The experiment was conducted at co-working spaces at the school of design and environment, however responses are seen throughout Singapore. Note that these results only show 634 of the [INSERT NUMBER] total responses as GPS localisation often failed indoors.}
-    \label{fig:map}
-\end{figure}
+
+% \begin{figure}
+%     \centering
+%     \begin{subfigure}[t]{0.3\textwidth}
+%         \centering
+%         \includegraphics[height= 3cm]{map_singapore.png}
+%         \caption{(a)}
+%     \end{subfigure}
+%     \begin{subfigure}[t]{0.3\textwidth}
+%         \centering
+%         \includegraphics[height= 3cm]{map_nus.png}
+%         \caption{(b)}
+%     \end{subfigure}
+%     \begin{subfigure}[t]{0.3\textwidth}
+%         \centering
+%         \includegraphics[height= 3cm]{map_sde.png}
+%         \caption{(c)}
+%     \end{subfigure}
+%     \caption{Map of responses. From left to right, the city of Singapore, National University of Singapore, and the School of Design and Environment. The experiment was conducted at co-working spaces at the school of design and environment, however responses are seen throughout Singapore. Note that these results only show 634 of the [INSERT NUMBER] total responses as GPS localisation often failed indoors.}
+%     \label{fig:map}
+% \end{figure}
 
 
 \subsection{Influence of Individual Users}
@@ -62,7 +69,7 @@ It is importat to note that the data is not representative of a single space. As
 \begin{figure}
 \begin{center}
 \includegraphics[width=\textwidth, trim= 0cm 0cm 0cm 0cm,clip]{cluster_results.pdf}
-\caption{Clustering of user feedback using hierarchal k-means}
+\caption{Clustering of user feedback using hierarchal k-means with euclidean distance. Four distinct groups can be observed. (A) two users that generally prefer cooler environments to their norm, (B) users that are comfortable 50\% of the time, (C) user that is almost always comfortable, (D) users that are comfortable on average 70\% of the time. To the right are breakdowns of the respective groups via sensor data and location. Below the cluster plot are spatial distributions of feedback responses at the two co-working spaces at the university. }
 \label{fig:clustering}
 \end{center}
 \end{figure}
@@ -94,21 +101,21 @@ It is widely known that heart-rate influences metabolic activity, and therefore 
 
 
 
-\begin{figure}
-    \begin{subfigure}[t]{0.49\textwidth}  
-    \centering
-	\includegraphics[width=\textwidth, trim= 0cm 0cm 0cm 0cm,clip]{heartHist.pdf}
-	\caption{(a)}
-	\label{fig:heartHist}
-    \end{subfigure}
-    \begin{subfigure}[t]{0.49\textwidth}
-    \centering
-		\includegraphics[width=\textwidth, trim= 0cm 0cm 0cm 0cm,clip]{temperatureHist.pdf}
-		\caption{(b)}
-		\label{fig:tempHist}	
-    \end{subfigure}
-    \caption{ Normalised distribution of the response type based on (a) heart rate (b) temperature. Note that the normalisation for "prefer warmer" is skewed due to the lack of responses of this type}
-\end{figure}
+% \begin{figure}
+%     \begin{subfigure}[t]{0.49\textwidth}  
+%     \centering
+% 	\includegraphics[width=\textwidth, trim= 0cm 0cm 0cm 0cm,clip]{heartHist.pdf}
+% 	\caption{(a)}
+% 	\label{fig:heartHist}
+%     \end{subfigure}
+%     \begin{subfigure}[t]{0.49\textwidth}
+%     \centering
+% 		\includegraphics[width=\textwidth, trim= 0cm 0cm 0cm 0cm,clip]{temperatureHist.pdf}
+% 		\caption{(b)}
+% 		\label{fig:tempHist}	
+%     \end{subfigure}
+%     \caption{ Normalised distribution of the response type based on (a) heart rate (b) temperature. Note that the normalisation for "prefer warmer" is skewed due to the lack of responses of this type}
+% \end{figure}
 
 
 
