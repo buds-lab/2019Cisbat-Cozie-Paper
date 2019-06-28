@@ -55,3 +55,8 @@ This paper propses a novel form of user comfort data collection using a wearable
 ### Outlook
 - this method allows for large complex data studies to be carried out
 - Spacematch will be launched in full
+
+## Reproducibility
+In an effort to provide reproducible results, the `Data` folder includes the Python code and anonymized participant data for reproducing the graphics of this paper
+
+
