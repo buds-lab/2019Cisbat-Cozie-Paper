@@ -1,11 +1,12 @@
-# Outline
 
-## Title: Methodology for the in-situ collection of indoor occupant comfort data
+## Title: Is your clock-face cozie? A smartwatch methodology for the in-situ collection of occupant comfort data
 
-Lead: PJ
-Co-Authors: Matias, Negin, Clayton
+Lead: PJ Jayathissa
+Co-Authors: Matias, Negin, Clayton, Tapeesh
 
 Keywords: Mood Logging, Comfort Feedback, Data Collection, Fitbit, Comfort Recommendation
+
+Under consideration for publication in the CISBAT 2019 Conference: https://cisbat.epfl.ch/
 
 ### Introduction:
 - 2012 Survey of 52'980 occupants in 351 office buildings found that 50% were dissatisfied with their indoor environment [/cite Frontczak 2012 Indoor Air]
