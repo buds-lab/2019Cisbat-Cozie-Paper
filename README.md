@@ -8,7 +8,7 @@ Keywords: Mood Logging, Comfort Feedback, Data Collection, Fitbit, Comfort Recom
 
 Under consideration for publication in the CISBAT 2019 Conference: https://cisbat.epfl.ch/
 
-![Overviewimage](https://github.com/buds-lab/cisbat-cozie-paper/blob/master/Images/cozie-overview-compressed.pdf)
+![Overviewimage](https://github.com/buds-lab/cisbat-cozie-paper/blob/master/Images/cozie-overview.jpg)
 
 ### Introduction:
 - 2012 Survey of 52'980 occupants in 351 office buildings found that 50% were dissatisfied with their indoor environment [/cite Frontczak 2012 Indoor Air]
