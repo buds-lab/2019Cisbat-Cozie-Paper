@@ -1,6 +1,6 @@
-# OUtline
+# Outline
 
-## Working Title: Methodology for the in-situ collection of indoor occupant comfort data
+## Title: Methodology for the in-situ collection of indoor occupant comfort data
 
 Lead: PJ
 Co-Authors: Matias, Negin, Clayton
